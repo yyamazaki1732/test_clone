@@ -1,0 +1,97 @@
+body {
+    display: grid;
+    height: 100vh;
+    font-size: 18px;
+
+    place-items: center;
+    ;
+}
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    grid-template: max-content / repeat(2, max-content
+    );
+    column-gap: 40px;
+}
+
+/* ===============================================
+# button
+=============================================== */
+
+.button__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 32px;
+}
+
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #000;
+    background-color: #fff;
+    cursor: pointer;
+
+    appearance: none;
+}
+
+.button__block {
+    position: relative;
+}
+
+/* ===============================================
+# counter
+=============================================== */
+
+.button__block div {
+    display: grid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    font-size: 12px;
+
+    translate: 50% -50%;
+    place-items: center;
+}
+
+/* ===============================================
+# display
+=============================================== */
+
+.display {
+    width: 200px;
+    height: 180px;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #000;
+}
+
+.display p {
+    margin-top: 12px;
+}
+
+.display span {
+    display: inline-block;
+}
+
+.display p:first-child {
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+}
